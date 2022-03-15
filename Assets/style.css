@@ -98,7 +98,7 @@ ul li:hover {
      padding-bottom: 7px;
 }
 
-ul li:nth-child(1):hover:before {
+ul li:nth-child(1):hover::after {
     content: '';
     position: absolute;
     top: 100%;
