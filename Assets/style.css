@@ -110,7 +110,7 @@ ul li:nth-child(1):hover::after {
 
 }
 
-ul li:nth-child(2):hover:before {
+ul li:nth-child(2):hover::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -121,7 +121,7 @@ ul li:nth-child(2):hover:before {
     left: calc(65% - 8px);
 }
 
-ul li:nth-child(3):hover:before {
+ul li:nth-child(3):hover::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -132,7 +132,7 @@ ul li:nth-child(3):hover:before {
     left: calc(55% - 8px);
 }
 
-ul li:nth-child(4):hover:before {
+ul li:nth-child(4):hover::after {
     content: '';
     position: absolute;
     top: 100%;
