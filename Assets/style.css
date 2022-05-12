@@ -32,27 +32,21 @@ body {
     min-height: 100%;
     line-height: 1.7;
     font-family: var(--ff-primary);
-    margin: 0 auto;
 }
 
-ul {
+ul, li {
     list-style-type: none;
 }
 
 .header-container {
     width: 100%;
     height: 64px;
-    margin: 0 auto;
     background: var(--clr-bg-header);
     border-bottom: solid 2px #E4E9F2;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-}
-
-.logo-img {
-    width: 60%;
 }
 
 img {
@@ -79,7 +73,7 @@ img {
 
 .nav-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -95,7 +89,8 @@ ul li {
 }
 
 ul li:hover {
-     padding-bottom: 7px;
+     top: -1px;
+     color: var(--clr-blue);
 }
 
 ul li:nth-child(1):hover::after {
@@ -107,7 +102,6 @@ ul li:nth-child(1):hover::after {
     height: 5px;
     border-radius: 100%;
     left: calc(65% - 8px);
-
 }
 
 ul li:nth-child(2):hover::after {
@@ -161,20 +155,21 @@ ul li:nth-child(4):hover::after {
 
 .list-item a:hover {
     color: var(--clr-blue);
-     padding-bottom: 7px;
 }
 
 .main-container {
     width: 100%;
     margin: 44px auto;
+    border: solid 3px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .intro {
-    width: 49%;
-    margin: 44px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    border: solid 3px red;
+     width: 49%;
+
 }
 
 .intro-title {
@@ -189,15 +184,13 @@ ul li:nth-child(4):hover::after {
     font-size: 19px;  
 }
 
-.content-container {
-    width: 51%;
-    margin: 0 auto;
-}
-
 .container-wrapper {
+    width: 51%;
+    border: solid 3px red;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    
 }
 
 .goal {
@@ -384,13 +377,13 @@ span {
     color: var(--clr-bg-main);
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 600px){
 
    nav ul {
     position: fixed;
     background-color: var(--clr-bg-header);
     flex-direction: column;
-    top: 100px;
+    top: 80px;
     left: 10%;
     width: 80%;
     text-align: center;
@@ -402,9 +395,8 @@ span {
   }
 
     nav ul.show {
-    transform: translateX(0);
+    transform: translateX(-5%);
   }
-
 
 
 .main-container {
