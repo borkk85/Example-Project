@@ -160,7 +160,6 @@ ul li:nth-child(4):hover::after {
 .main-container {
     width: 100%;
     margin: 44px auto;
-    border: solid 3px red;
     display: flex;
     flex-direction: column;
     align-items: center;
