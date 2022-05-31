@@ -167,7 +167,6 @@ ul li:nth-child(4):hover::after {
 }
 
 .intro {
-    border: solid 3px red;
      width: 49%;
 
 }
@@ -186,7 +185,6 @@ ul li:nth-child(4):hover::after {
 
 .container-wrapper {
     width: 51%;
-    border: solid 3px red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
